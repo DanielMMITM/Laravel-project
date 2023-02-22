@@ -2,10 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Redirect;
 
 class PostsController extends Controller
 {
@@ -14,7 +11,7 @@ class PostsController extends Controller
      * 
      * @return \Illuminate\Http\Response
      */
-    public function index(Response $response) 
+    public function index() 
     {
         
     }
@@ -24,9 +21,9 @@ class PostsController extends Controller
      * 
      * @return \Illuminate\Http\Response
      */
-    public function create(Response $response)
+    public function create()
     {
-        return "Pagina de un creacion de articulo";
+        return view('posts.create');
     }
 
     /**
@@ -35,9 +32,9 @@ class PostsController extends Controller
      * @param \Illuminate\Http\Request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, RedirectResponse $redirectResponse)
+    public function store(Request $request)
     {
-        //
+        dd($request->all());
     }
 
     /**
@@ -46,7 +43,7 @@ class PostsController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id, Response $response)
+    public function show($id)
     {
         return "Pagina de un articulo especifico ({$id})";
     }
@@ -57,7 +54,7 @@ class PostsController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(string $id, Response $response)
+    public function edit(string $id)
     {
         return "Pagina del formulario de edicion ({$id})";
     }
@@ -69,7 +66,7 @@ class PostsController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id, RedirectResponse $redirectResponse)
+    public function update(Request $request)
     {
         //
     }
@@ -80,7 +77,7 @@ class PostsController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id, RedirectResponse $redirectResponse)
+    public function destroy($id)
     {
         //
     }

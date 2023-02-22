@@ -16,21 +16,6 @@
                 <p>{{ $post->excerpt }}</p>
             </article>
         @endforeach
-
-        <article>
-            <h1>Curso de Laravel</h1>
-            <p>sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr</p>
-        </article>
-
-        <article>
-            <h1>Curso de Laravel</h1>
-            <p>sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr</p>
-        </article>
-
-        <article>
-            <h1>Curso de Laravel</h1>
-            <p>sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr gaegawega aefawef wg f ag e g awegawegaewgaweg sit comodo est nostrud fugiat amet labot afawegawaww4awkg rgawogaw faowefa awgagpaf woeagaowgawa gwgawega awgawegaw ogpqwkr</p>
-        </article>
     </div>
     
 </body>
