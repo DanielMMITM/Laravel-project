@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class PostsController extends Controller
@@ -34,7 +35,22 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        // // $posts = new Post;
+        // // $posts->title = $request->input('title');
+        // // $posts->excerpt = $request->input('excerpt');
+        // // $posts->content = $request->input('content');
+
+        // // $posts->save();
+
+        // Post::create($request->all());
+
+        Post::create([
+            'title' => $request->input('title'),
+            'excerpt' => $request->input('excerpt'),
+            'content' => $request->input('content'),
+        ]);
+
+        return redirect('/index');
     }
 
     /**
@@ -56,7 +72,7 @@ class PostsController extends Controller
      */
     public function edit(string $id)
     {
-        return "Pagina del formulario de edicion ({$id})";
+        return view('posts.edit');
     }
 
     /**
