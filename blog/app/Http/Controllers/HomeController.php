@@ -37,7 +37,7 @@ class HomeController extends Controller
         // //     'posts' => $posts,
         // // ]);
     
-        // //ESTO SE HACE PARA PASAR UNA SOLA VARIABLE, SE PUEDE ENCADENAR MAS METODOS WITH Y PASAR MAS VARIABLES
+        // //ESTO SE HACE PARA PASAR UNA SOLA VARIABLE, SE PUEDE ENCADENAR MAS METODOS WITH Y PASAR MAS VARIABLES, se puede encadenar mas with
         return view('index')->with('posts', $posts);
     }
 }

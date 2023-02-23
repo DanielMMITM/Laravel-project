@@ -59,9 +59,18 @@ class PostsController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    //public function show($id)
+    //public function show(Post $id)
+    public function show(Post $post)
     {
-        return "Pagina de un articulo especifico ({$id})";
+        //Route model binding
+
+        //$post = Post::findOrFail($id);
+        
+        return view('posts.show')->with([
+            //'post' => $post,
+            'post' => $post,
+        ]);
     }
 
     /**
