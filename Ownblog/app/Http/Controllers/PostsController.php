@@ -67,9 +67,11 @@ class PostsController extends Controller
 
         //$post = Post::findOrFail($id);
         
+        $comments = $post->comments;
         return view('posts.show')->with([
             //'post' => $post,
             'post' => $post,
+            'comments' => $comments,
         ]);
     }
 

@@ -17,13 +17,21 @@
             <h2>Contenido</h3>   
             <p>{{ $post->content }}</p>   
         </article>
-        <a href="/"><< Inicio</a> 
+        <a href="/index"><< Inicio</a> 
         <a href="/posts/{{ $post->id }}/edit">Editar >></a>
         <form action="/posts/{{ $post->id }}" method="POST" style="display:inline-block;">
             @csrf
             @method('DELETE')
             <button type="submit" class="btn" onclick="return confirm('Estas seguro que quieres borrar el post?')">Eliminar</button>   
         </form>
+        <div>
+            <h4>Comentarios</h4>
+            @foreach ($comments as $comment)
+                <div>{{ $comment->content }}</div>
+                <small style="color: #aaa">{{ $comment->name }}</small>
+                <hr>
+            @endforeach
+        </div>
     </div>
 </body>
 </html>
