@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comment;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
@@ -51,6 +52,22 @@ class PostsController extends Controller
         ]);
 
         return redirect('/index');
+    }
+
+    public function storecomment(Request $request, Post $post)
+    {
+        Comment::create([
+            'name' => $request->input('name'),
+            'post_id' => $request->input('post_id'),
+            'content' => $request->input('content'),
+        ]);
+        
+        $comments = $post->comments;
+        return view('posts.show')->with([
+            //'post' => $post,
+            'post' => $post,
+            'comments' => $comments,
+        ]);
     }
 
     /**

@@ -32,6 +32,13 @@
                 <hr>
             @endforeach
         </div>
+        <form method="POST" action="/posts/{{ $post->id }}" style="display:flex;flex-direction:column">
+            @csrf
+            <input type="text" name="name" Placeholder="Name">
+            <input type="number" name="post_id" hidden value="{{ $comment->post_id }}">
+            <textarea name="content" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea>
+            <button type="submit">Guardar</button>
+        </form>
     </div>
 </body>
 </html>
