@@ -16,6 +16,5 @@
             </article>
         @endforeach
     </div>
-    
 </body>
 </html>
